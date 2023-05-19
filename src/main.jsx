@@ -6,13 +6,14 @@ import {
 } from "react-router-dom";
 import App from './App.jsx'
 import './index.css'
+import Home from './components/home/Home.jsx';
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Home></Home>,
   },
 ]);
 
