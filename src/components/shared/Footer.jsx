@@ -1,12 +1,13 @@
-import React from "react";
+
 import logo from "../../../public/tou heaven_Mesa de trabajo 1.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer p-10  bg-indigo-900 text-white">
+      <div className=" bg-indigo-900 text-white p-10">
+          <footer className="footer ">
       <div className="w-52">
         <img src={logo} alt="" />
-        <div className="md:place-self-center md:justify-self-end">
+        <div className="my-4">
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg
@@ -63,8 +64,14 @@ const Footer = () => {
         <a className="link link-hover">Terms of use</a>
         <a className="link link-hover">Privacy policy</a>
         <a className="link link-hover">Cookie policy</a>
-      </div>
-    </footer>
+          </div>
+          
+          </footer>
+          <div className="footer-center mt-6">
+    <p>Copyright © 2023 - All right reserved by Nafiul Hasan Hasib</p>
+  </div>
+          
+    </div>
   );
 };
 

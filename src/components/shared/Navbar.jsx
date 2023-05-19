@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/tou heaven_Mesa de trabajo 1.png'
 
 const Navbar = () => {
@@ -27,51 +28,51 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
                <li>
-              <a>Home</a>
+              <Link to='./'>Home</Link>
             </li>
             <li tabIndex={0}>
-              <a>
+              <Link to='./all-toys'>
                 All toys
-              </a>
+              </Link>
             </li>
             <li>
-              <a>My Toys</a>
+              <Link to='./my-toys'>My Toys</Link>
             </li>
             <li>
-              <a>Add A Toys</a>
+              <Link to='./add-toys'>Add A Toys</Link>
                       </li>
                       <li>
-              <a>Blogs</a>
+              <Link to='./blogs'>Blogs</Link>
             </li>
             </ul>
           </div>
-                  <a className="btn btn-ghost normal-case text-xl">
+                  <Link className="btn btn-ghost normal-case text-xl">
                       <img className='w-48' src={logo} alt="" />
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex  text-white">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <Link to='./'>Home</Link>
             </li>
             <li tabIndex={0}>
-              <a>
+              <Link to='./all-toys'>
                 All toys
-              </a>
+              </Link>
             </li>
             <li>
-              <a>My Toys</a>
+              <Link to='./my-toys'>My Toys</Link>
             </li>
             <li>
-              <a>Add A Toys</a>
+              <Link to='./add-toys'>Add A Toys</Link>
                       </li>
                       <li>
-              <a>Blogs</a>
+              <Link to='./blogs'>Blogs</Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-secondary">Login</a>
+          <Link to='/login'><button className="btn btn-secondary">Login</button></Link>
         </div>
       </div>
     </div>

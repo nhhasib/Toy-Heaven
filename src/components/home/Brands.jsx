@@ -2,7 +2,7 @@ import React from 'react';
 
 const Brands = () => {
     return (
-        <div className='w-4/5 mx-auto'>
+        <div className='w-4/5 mx-auto my-8'>
             <h1 className='text-4xl font-bold text-center my-8 text-indigo-800'>Our Brands</h1>
             <div className='grid grid-cols-3 gap-4'>
             <img className='rounded-xl' src="https://i0.wp.com/abctoysbd.com/wp-content/uploads/2023/04/HOT-WHEELS.jpg?w=900&ssl=1" alt="" />
