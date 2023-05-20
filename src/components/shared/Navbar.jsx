@@ -2,9 +2,20 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/images/tou heaven_Mesa de trabajo 1.png'
 import { useContext } from 'react';
 import { AuthContext } from '../AuthProvider/AuthProvider';
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
-  const {user}=useContext(AuthContext)
+  const { user, logOut } = useContext(AuthContext)
+  console.log(user)
+  const handleLogout = () => {
+    logOut()
+      .then(result => {
+        toast.warning(`${user.displayName},logout Successfully`)
+      })
+      .catch(error => {
+      toast.error(error.message)
+    })
+  }
   return (
     <div>
       <div className="navbar bg-indigo-900 p-8">
@@ -75,8 +86,15 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <h1 className='text-white'>{user.email}</h1>
-          {user?<button className="btn btn-secondary">Logout</button>:<Link to='/login'><button className="btn btn-secondary">Login</button></Link>}
+          {user ?
+            <div className='flex items-center gap-4'>
+              <div className='tooltip' data-tip={user.displayName}>
+              <img className='w-12 h-12 rounded-full' src={user.photoURL} alt="" />
+              </div>
+              <button onClick={handleLogout} className="btn btn-secondary">Logout</button>
+            </div>
+             :
+            <Link to='/login'><button className="btn btn-secondary">Login</button></Link>}
         </div>
       </div>
     </div>

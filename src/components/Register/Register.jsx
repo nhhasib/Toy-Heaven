@@ -13,7 +13,12 @@ const Register = () => {
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-        createUser(name,photo,email,password)
+        createUser(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log('created user', user)
+            })
+            .catch(error => console.log(error))
 
         
     }
