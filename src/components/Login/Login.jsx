@@ -1,7 +1,12 @@
+import { useContext } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+import 'react-toastify/dist/ReactToastify.css';
+
 const Login = () => {
+
+    
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
@@ -47,7 +52,8 @@ const Login = () => {
                               <button className="btn btn-outline btn-secondary px-8"><FaGoogle></FaGoogle></button>
                               <button className="btn btn-outline btn-accent px-8"><FaGithub></FaGithub></button>
                           </div>
-                          <p className="text-center">New to this website? <Link to='/register' className="text-indigo-700 font-bold">Register</Link></p>
+                          <p className="text-center">New to this website? <Link to='/register' className="text-indigo-700 font-bold" >Register</Link></p>
+                          
             </div>
           </div>
               </div>
