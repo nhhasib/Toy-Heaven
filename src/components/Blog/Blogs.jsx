@@ -60,7 +60,64 @@ const Blog = () => {
           better performance while NoSQL uses commodity hardware.
         </p>
       </div>
-
+      <div className="border rounded-2xl bg-slate-100 m-6 p-6">
+        <h1 className="font-bold text-2xl">
+          3. What is express js? What is Nest JS ?
+        </h1>
+        <br />
+        <p>
+          <span className="font-bold">Ans. </span>
+          Express.js is a minimal and flexible web application framework for
+          Node.js that allows you to build web applications and APIs. It
+          provides a simple and straightforward approach to handling HTTP
+          requests, routing, middleware, and other web-related functionality.
+          Express.js is widely used and has a large ecosystem of plugins and
+          extensions available. Nest.js, on the other hand, is a progressive and
+          opinionated framework for building efficient and scalable server-side
+          applications. It is built with TypeScript and heavily influenced by
+          Angular's architecture and concepts. Nest.js provides a robust and
+          modular structure for developing applications, supporting features
+          like dependency injection, declarative programming, and powerful
+          abstractions. It also integrates well with other libraries and
+          frameworks, making it suitable for building complex enterprise-level
+          applications.
+        </p>
+      </div>
+      <div className="border rounded-2xl bg-slate-100 m-6 p-6">
+        <h1 className="font-bold text-2xl">
+          4. What is MongoDB aggregate and how does it work ?
+        </h1>
+        <br />
+        <p>
+          <span className="font-bold">Ans. </span>
+          MongoDB's aggregation framework is a powerful feature that allows you
+          to perform complex data analysis and manipulation operations on
+          collections of documents. It provides a flexible way to query and
+          process data within MongoDB. The aggregation pipeline is the primary
+          mechanism used in MongoDB for data aggregation. It consists of a
+          sequence of stages, where each stage performs a specific operation on
+          the input data and passes the results to the next stage. Each stage in
+          the pipeline can perform operations such as filtering documents,
+          transforming data, grouping documents by a specific field, calculating
+          aggregate values, and more. The output of one stage becomes the input
+          for the next stage until the final results are obtained. The pipeline
+          stages are defined using an array of objects in the aggregation query.
+          Each object represents a stage and specifies the operation and its
+          parameters. Some commonly used stages include $match for filtering
+          documents, $group for grouping documents, $project for shaping the
+          output, and $sort for sorting the results. The aggregation framework
+          also provides a rich set of operators and expressions that can be used
+          within stages to perform specific calculations or transformations.
+          These include arithmetic operators, array operators, comparison
+          operators, date operators, and more. By combining different stages and
+          operators in the aggregation pipeline, you can create complex queries
+          and obtain aggregated results that meet your specific requirements.
+          Overall, MongoDB's aggregation framework offers a flexible and
+          efficient way to analyze and process data within the database,
+          allowing you to perform various data transformations and calculations
+          in a single query.
+        </p>
+      </div>
     </div>
   );
 };
