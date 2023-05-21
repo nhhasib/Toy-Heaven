@@ -1,33 +1,29 @@
 import React from 'react';
 
 const TopSelling = () => {
+
     return (
-        <div>
-            <div className="w-64 carousel rounded-box">
-  <div className="carousel-item w-full">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqTu0rh-BW32oLGVpPWtj7oxWmHOj7Z4vHNQ&usqp=CAU" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb_hUbVhCbawArxEh9pdDhd2bXvq-WVuRsRg&usqp=CAU" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhk8FUX6rOy2buO8KFFoXHWwvor6rNuj7adg&usqp=CAU" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFrGlf4MnzJAVaPi5pquqU9Y0QpdBNvauDWQ&usqp=CAU" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCH-uU181FLkNs_MsncCq4oMkMqjXOCkeiQ&usqp=CAU" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJb-Rq1pEqA5lhYPZ5ZDR6cy-60Kk7q3Sb3g&usqp=CAU" alt="Burger" />
-  </div> 
-  <div className="carousel-item">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKPnIeMF3QkCIRILfm4Z-suFeY4BWFWN8eqw&usqp=CAU" alt="Burger" />
-  </div>
+        <div className='w-4/5 mx-auto'>
+ <h1 className='text-4xl font-bold text-center my-8 text-indigo-800'>Our Top Seling Products</h1>
+  <div className="grid grid-cols-3">
+    <img className='rounded w-80' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqTu0rh-BW32oLGVpPWtj7oxWmHOj7Z4vHNQ&usqp=CAU" alt="Burger" />
+  
+    <img className='rounded w-80' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb_hUbVhCbawArxEh9pdDhd2bXvq-WVuRsRg&usqp=CAU" alt="Burger" />
+
+
+    <img className='rounded w-80' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhk8FUX6rOy2buO8KFFoXHWwvor6rNuj7adg&usqp=CAU" alt="Burger" />
+
+
+    <img className='rounded w-80' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFrGlf4MnzJAVaPi5pquqU9Y0QpdBNvauDWQ&usqp=CAU" alt="Burger" />
+
+
+    <img className='rounded w-80' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5BkSIGMp-XF_gIU6wasWbdv-XwU1kqO5x9g&usqp=CAU" alt="Burger" />
+
+
+    <img className='rounded w-80' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKPnIeMF3QkCIRILfm4Z-suFeY4BWFWN8eqw&usqp=CAU" alt="Burger" />
             </div>
-            
-        </div>
+            </div>
+
     );
 };
 

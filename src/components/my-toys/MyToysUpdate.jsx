@@ -41,7 +41,7 @@ console.log(toy)
           <div className="hero-content flex-col">
             <div className="text-center lg:text-left">
               <h1 className="text-5xl text-center font-bold">
-                {name}
+                You are updating: {name}
                         </h1>
                         <p className="py-6 text-center">
               Update your products to display more precisely
