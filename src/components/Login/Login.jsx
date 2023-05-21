@@ -46,15 +46,16 @@ const Login = () => {
     <div>
       <div className="hero min-h-screen bg-base-200 py-10">
         <div className="hero-content flex-col gap-10 w-4/5">
-          <div className="text-center border lg:text-left">
+          <div className="text-center lg:text-left">
             <h1 className="text-5xl text-center font-bold"> Please Login!</h1>
             <p className="pt-6 text-2xl text-indigo-800">
             A world of toys at your fingertips.
                       </p>
           </div>
-                  <form onSubmit={handleLogin}>
-                  <div className="card flex-shrink-0 w-96 max-w-sm shadow-2xl bg-base-100">
-            <div className="card-body">
+
+                  <div className="card flex-shrink-0 w-96 max-w-sm shadow-2xl bg-base-100 pb-6">
+                <form onSubmit={handleLogin}>
+                          <div className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -84,7 +85,9 @@ const Login = () => {
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-secondary">Login</button>
-                          </div>
+                              </div>
+                              </div>
+                </form>
                           <div className=" flex gap-4 justify-center items-center my-4">
                               <h1 className="font-bold">Login with</h1>
                               <button onClick={handleGoogleLogin} className="btn btn-outline btn-secondary px-8"><FaGoogle></FaGoogle></button>
@@ -94,11 +97,10 @@ const Login = () => {
                           
             </div>
           </div>
-          </form>
+
               </div>
               
       </div>
-    </div>
   );
 };
 
