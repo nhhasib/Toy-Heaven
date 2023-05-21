@@ -36,13 +36,13 @@ const router = createBrowserRouter([
           {
               path: "/all-toys",
               element: <AllToys></AllToys>,
-              loader:()=>fetch('http://localhost:5000/all-toys')
+              loader:()=>fetch('https://toy-heaven-server-nhhasib.vercel.app/all-toys')
               
           },
           {
               path: "/all-toys/:id",
               element: <PrivateRoutes><ToyDetails></ToyDetails></PrivateRoutes>,
-              loader:({params})=>fetch(`http://localhost:5000/all-toys/${params.id}`)
+              loader:({params})=>fetch(`https://toy-heaven-server-nhhasib.vercel.app/all-toys/${params.id}`)
           },
           {
               path: "/add-toys",
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
           {
               path: "/update/:id",
               element: <PrivateRoutes><MyToysUpdate></MyToysUpdate></PrivateRoutes>,
-              loader:({params})=>fetch(`http://localhost:5000/all-toys/${params.id}`)
+              loader:({params})=>fetch(`https://toy-heaven-server-nhhasib.vercel.app/all-toys/${params.id}`)
           },
           {
               path: "/blogs",

@@ -3,7 +3,7 @@ import React from 'react';
 const TopSelling = () => {
 
     return (
-        <div className='w-4/5 mx-auto'>
+        <div className='w-4/5 my-20 mx-auto'>
  <h1 className='text-4xl font-bold text-center my-8 text-indigo-800'>Our Top Seling Products</h1>
   <div className="grid grid-cols-3">
     <img className='rounded w-80' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqTu0rh-BW32oLGVpPWtj7oxWmHOj7Z4vHNQ&usqp=CAU" alt="Burger" />

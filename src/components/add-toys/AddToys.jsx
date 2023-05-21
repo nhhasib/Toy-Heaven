@@ -20,7 +20,7 @@ const AddToys = () => {
         
         const product = { image, name, seller_name, seller_email, category, price, rating, quantity, description };
 
-        fetch('http://localhost:5000/add-toys', {
+        fetch('https://toy-heaven-server-nhhasib.vercel.app/add-toys', {
             method: 'POST',
             headers: {
                 'content-type':'application/json'

@@ -1,19 +1,27 @@
 import { useContext } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
 
 const Login = () => {
-    const { signIn,googleLogin } = useContext(AuthContext);
+  const { signIn, googleLogin } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  console.log(location)
+
+  const from = location.state?.from?.pathname || '/';
+
     
     const handleGoogleLogin = () => {
         googleLogin()
             .then(result => {
                 const user = result.user;
-                toast.success(`${user.displayName},Login Successfully`)
+              navigate(from, { replace: true });
+              toast.success(`${user.displayName},Login Successfully`);
+
             })
             .catch(error => {
                 console.log(error)
@@ -30,7 +38,8 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 const user = result.user;
-                toast.success(`${user.displayName},Login Successfully`);
+              toast.success(`${user.displayName},Login Successfully`);
+              navigate(from, { replace: true });
                 form.reset()
                
             })

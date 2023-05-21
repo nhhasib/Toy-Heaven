@@ -9,7 +9,7 @@ const Blog = () => {
         <br />
         <p>
           <span className="font-bold">Ans. </span> An access token is a
-          credential that grants a client (such as a user or an application)
+          credential that grants a client 
           access to specific resources or services on a server. It is typically
           used in the context of authentication and authorization mechanisms,
           such as OAuth. When a client authenticates itself and obtains an
@@ -26,19 +26,7 @@ const Blog = () => {
           response. Refresh tokens are typically more secure and have longer
           lifespans compared to access tokens. Regarding storage on the
           client-side, access tokens and refresh tokens should be handled with
-          caution to prevent unauthorized access. Storing them in a secure
-          manner is crucial. It is generally recommended to store access tokens
-          in a temporary location such as memory or a short-lived session
-          storage mechanism, such as a secure HTTP-only cookie. Refresh tokens,
-          being long-lived and more sensitive, should be stored securely in a
-          persistent storage mechanism, such as a secure HTTP-only cookie or a
-          local storage with appropriate security measures, like encryption and
-          integrity checks. It's important to note that the specific
-          recommendations for storing tokens may vary depending on the security
-          requirements of your application and the frameworks or libraries you
-          are using. It is advisable to consult relevant security guidelines and
-          best practices for the particular technology stack you
-          are working with.
+          caution to prevent unauthorized access. 
         </p>
       </div>
       <div className="border rounded-2xl bg-slate-100 m-6 p-6">
@@ -47,10 +35,7 @@ const Blog = () => {
         </h1>
         <br />
         <p>
-          <span className="font-bold">Ans. </span> Key Differences between SQL
-          and NoSQL SQL pronounced as “S-Q-L” or as “See-Quel” is primarily
-          called RDBMS or Relational Databases, whereas NoSQL is a
-          Non-relational or Distributed Database. Comparing SQL vs NoSQL
+          <span className="font-bold">Ans. </span>  Comparing SQL vs NoSQL
           databases, SQL databases are table-based databases, whereas NoSQL
           databases can be document-based, key-value pairs, and graph databases.
           SQL databases are vertically scalable, while NoSQL databases are
@@ -105,17 +90,7 @@ const Blog = () => {
           Each object represents a stage and specifies the operation and its
           parameters. Some commonly used stages include $match for filtering
           documents, $group for grouping documents, $project for shaping the
-          output, and $sort for sorting the results. The aggregation framework
-          also provides a rich set of operators and expressions that can be used
-          within stages to perform specific calculations or transformations.
-          These include arithmetic operators, array operators, comparison
-          operators, date operators, and more. By combining different stages and
-          operators in the aggregation pipeline, you can create complex queries
-          and obtain aggregated results that meet your specific requirements.
-          Overall, MongoDB's aggregation framework offers a flexible and
-          efficient way to analyze and process data within the database,
-          allowing you to perform various data transformations and calculations
-          in a single query.
+          output, and $sort for sorting the results. 
         </p>
       </div>
     </div>

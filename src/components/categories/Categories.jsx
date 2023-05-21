@@ -9,7 +9,7 @@ const Categories = () => {
   const [category, setcategory] = useState('RaceCars');
 
   useEffect(() => {
-    fetch('http://localhost:5000/all-toys')
+    fetch('https://toy-heaven-server-nhhasib.vercel.app/all-toys')
       .then(res => res.json())
       .then(data => setDatas(data))
   }, [])
