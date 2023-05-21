@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { useContext } from 'react';
+import img from '../../assets/images/colorful-composition-kid-puzzle.jpg'
 
 const Register = () => {
     const {createUser} = useContext(AuthContext);
@@ -25,11 +26,11 @@ const Register = () => {
     return (
         
             <form onSubmit={handleCreateUser}>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse gap-10 w-4/5">
+      <div className="hero min-h-screen bg-base-200 py-10">
+        <div className="hero-content flex-col gap-10 w-4/5">
                         <div className="text-center lg:text-left">
-                            <p className='font-bold text-2xl'>A world of toys at your fingertips.</p>
-            <h1 className="text-6xl font-bold text-indigo-900"> Welcome to our TOY HEAVEN!</h1>
+                            <p className='font-bold text-center text-2xl'>A world of toys at your fingertips.</p>
+            <h1 className="text-6xl text-center font-bold text-indigo-900"> Welcome to our TOY HEAVEN!</h1>
             
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -81,7 +82,7 @@ const Register = () => {
 
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Register</button>
+                <button className="btn btn-secondary">Register</button>
                           </div>
                           <p className="text-center">Already have account? <Link to='/login' className="text-indigo-700 font-bold">Login</Link></p>
             </div>
