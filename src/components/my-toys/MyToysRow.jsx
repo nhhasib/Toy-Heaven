@@ -21,7 +21,7 @@ const MyToysRow = ({toy,toys,setToys}) => {
                   'success'
               )
               const remaining = toys.filter(t => t._id !== _id);
-              setCoffees(remaining);
+              setToys(remaining);
           }
       })
 

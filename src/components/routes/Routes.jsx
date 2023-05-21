@@ -12,6 +12,7 @@ import PrivateRoutes from "./PrivateRoutes";
 import MyToys from "../my-toys/MyToys";
 import MyToysUpdate from "../my-toys/MyToysUpdate";
 import Blog from "../Blog/Blogs";
+import Error from "../Error/Error";
 
 
 
@@ -61,8 +62,12 @@ const router = createBrowserRouter([
               path: "/blogs",
               element:<Blog></Blog>
           }
-      ]
+        ],
     },
+    {
+        path: "*",
+        element:<Error></Error>
+    }
     
   ]);
 

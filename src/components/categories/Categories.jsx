@@ -3,18 +3,22 @@ import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 const Categories = () => {
-  const [data, setData] = useState();
+  const [datas, setDatas] = useState();
+
   useEffect(() => {
-    fetch()
+    fetch('http://localhost:5000/all-toys')
+      .then(res => res.json())
+      .then(data => setDatas(data))
   },[])
   const handletab1 = () => {
-    
+    const filterData = datas.filter(data => data.category == 'race_cars');
+    console.log(filterData)
   }
 
   return (
   <Tabs className="text-center">
     <TabList>
-      <Tab onClick={handletab1}>Title 1</Tab>
+      <Tab onClick={handletab1}>Race Cars</Tab>
       <Tab>Title 2</Tab>
       <Tab>Title 2</Tab>
     </TabList>

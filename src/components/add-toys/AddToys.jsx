@@ -26,12 +26,13 @@ const AddToys = () => {
             body:JSON.stringify(product)
         })
             .then(res => res.json())
-            .then(data => {
-                if (data.insertId) {
+          .then(data => {
+              console.log(data)
+                if (data.insertedId) {
                     Swal.fire({
                         icon: 'success',
-                        title: 'Sucess!',
-                        text: 'Product updated Successfully!',
+                        title: 'Success!',
+                        text: 'Product created Successfully!',
                         confirmButtonText:
             '<i class="fa fa-thumbs-up"></i> Great!',
                       })
