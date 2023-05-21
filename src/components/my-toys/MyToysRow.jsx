@@ -7,23 +7,35 @@ const MyToysRow = ({toy,toys,setToys}) => {
   
 
   const handleDelete = () => {
-    
-    fetch(`http://localhost:5000/all-toys/${_id}`, {
-      method: 'DELETE'
-  })
-      .then(res => res.json())
-      .then(data => {
-          console.log(data);
-          if (data.deletedCount > 0) {
-              Swal.fire(
-                  'Deleted!',
-                  'Your toys has been deleted.',
-                  'success'
-              )
-              const remaining = toys.filter(t => t._id !== _id);
-              setToys(remaining);
-          }
+
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        fetch(`http://localhost:5000/all-toys/${_id}`, {
+          method: 'DELETE'
       })
+          .then(res => res.json())
+          .then(data => {
+              console.log(data);
+              if (data.deletedCount > 0) {
+                  Swal.fire(
+                      'Deleted!',
+                      'Your toys has been deleted.',
+                      'success'
+                  )
+                  const remaining = toys.filter(t => t._id !== _id);
+                  setToys(remaining);
+              }
+          })
+      }
+    })
 
 }
 
