@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import Swal from "sweetalert2";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const AddToys = () => {
+  const {user}=useContext(AuthContext)
 
     const handleAddtoDB = event => {
         event.preventDefault();
@@ -88,6 +90,7 @@ const AddToys = () => {
                 <input
                   type="text"
                   name="seller_name"
+                  defaultValue={user.displayName}
                   placeholder="Enter Product name"
                   className="input input-bordered"
                 />
@@ -99,6 +102,7 @@ const AddToys = () => {
                 <input
                   type="email"
                   name="seller_email"
+                  defaultValue={user.email}
                   placeholder="Enter Product name"
                   className="input input-bordered"
                 />
