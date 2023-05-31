@@ -20,7 +20,7 @@ const AddToys = () => {
         
         const product = { image, name, seller_name, seller_email, category, price, rating, quantity, description };
 
-        fetch('https://toy-heaven-server-nhhasib.vercel.app/add-toys', {
+        fetch('https://toy-heaven-server.vercel.app/add-toys', {
             method: 'POST',
             headers: {
                 'content-type':'application/json'
@@ -91,7 +91,7 @@ const AddToys = () => {
                   type="text"
                   name="seller_name"
                   defaultValue={user.displayName}
-                  placeholder="Enter Product name"
+                  placeholder="Enter Seller name"
                   className="input input-bordered"
                 />
                           </div>
@@ -103,7 +103,7 @@ const AddToys = () => {
                   type="email"
                   name="seller_email"
                   defaultValue={user.email}
-                  placeholder="Enter Product name"
+                  placeholder="Enter Seller email"
                   className="input input-bordered"
                 />
                           </div>
@@ -114,7 +114,7 @@ const AddToys = () => {
                 <input
                   type="text"
                   name="category"
-                  placeholder="Enter Product name"
+                  placeholder="Enter Product Sub-category"
                   className="input input-bordered"
                 />
                           </div>
@@ -125,7 +125,7 @@ const AddToys = () => {
                 <input
                   type="number"
                   name="price"
-                  placeholder="Enter Product name"
+                  placeholder="Enter Product price"
                   className="input input-bordered"
                 />
                           </div>
@@ -136,7 +136,7 @@ const AddToys = () => {
                 <input
                   type="number"
                   name="rating"
-                  placeholder="Enter Product name"
+                  placeholder="Enter Product Rating"
                   className="input input-bordered"
                 />
                           </div>
@@ -147,7 +147,7 @@ const AddToys = () => {
                 <input
                   type="number"
                   name="quantity"
-                  placeholder="Enter Product name"
+                  placeholder="Enter Product Quantity"
                   className="input input-bordered"
                 />
                           </div>
@@ -158,7 +158,7 @@ const AddToys = () => {
                 <input
                   type="text"
                   name="description"
-                  placeholder="Enter Product name"
+                  placeholder="Enter Product Description"
                   className="input input-bordered"
                 />
                           </div>

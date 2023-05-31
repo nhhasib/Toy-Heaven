@@ -15,7 +15,7 @@ console.log(toy)
         
         const UpdatedProduct = {   price,  quantity, description };
 
-        fetch(`https://toy-heaven-server-nhhasib.vercel.app/all-toys/${_id}`, {
+        fetch(`https://toy-heaven-server.vercel.app/all-toys/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type':'application/json'
