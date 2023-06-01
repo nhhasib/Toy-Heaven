@@ -11,12 +11,10 @@ const Banner = () => {
                     <img src={img2} className="w-full" />
                     
     <div className="absolute h-full flex items-center justify-between transform bg bg-gradient-to-r from-indigo-800 to-transparent">
-                        <h1 className='font-bold w-4/5 ml-28 text-white text-5xl'>Racing through imagination, our toy car website brings joy to all ages.</h1>
-                        
+                        <h1 className='font-bold w-4/5 mx-20 lg:ml-28 text-white lg:text-5xl'>Racing through imagination, our toy car website brings joy to all ages.</h1>
+    <div className="absolute h-full flex items-center justify-between transform left-20 top-20 lg:left-28 lg:top-28">
+    <button className='btn btn-secondary'>Order Now</button>                
     </div>
-    <div className="absolute h-full flex items-center justify-between transform left-28 top-28">
-    <button className='btn btn-secondary'>Order Now</button>
-                        
     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         
@@ -27,7 +25,7 @@ const Banner = () => {
   <div id="slide2" className="carousel-item relative w-full">
                     <img src={img1} className="w-full" />
                     <div className="absolute h-full flex items-center justify-between transform bg bg-gradient-to-r from-indigo-800 to-transparent">
-                        <h1 className='w-1/2 text-2xl font-bold ml-28 text-white'>Our toy car website is a haven for car enthusiasts and toy collectors alike. With an extensive collection of miniature vehicles, we offer a wide range of toy cars that cater to various tastes and preferences. </h1>
+                        <h1 className='w-11/12 lg:w-4/5 text-sm lg:text-4xl lg:font-bold lg:ml-28 mx-20 text-white'>Our toy car website is a haven for car enthusiasts and toy collectors alike. With an extensive collection of miniature vehicles, we offer a wide range of toy cars that cater to various tastes and preferences. </h1>
                         
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -38,7 +36,7 @@ const Banner = () => {
   <div id="slide3" className="carousel-item relative w-full">
                     <img src={img3} className="w-full" />
                     <div className="absolute h-full flex items-center justify-between transform bg bg-gradient-to-r from-indigo-800 to-transparent">
-                        <h1 className='font-bold w-4/5 ml-28 text-white text-4xl'>Unlock the magic of play with our captivating collection of toy cars, where imagination meets exhilaration.</h1>
+                        <h1 className='font-bold w-4/5 mx-20 lg:ml-28 text-white lg:text-4xl'>Unlock the magic of play with our captivating collection of toy cars, where imagination meets exhilaration.</h1>
                         
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

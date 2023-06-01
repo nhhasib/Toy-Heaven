@@ -28,17 +28,17 @@ const Categories = () => {
     </TabList>
 
     <TabPanel>
-        <div className='grid grid-cols-3 my-6'>
+        <div className='grid lg:grid-cols-3 my-6 gap-4'>
         {filterData?.map(data=><ToyCard key={data._id} data={data}></ToyCard>)}
       </div>
     </TabPanel>
     <TabPanel>
-    <div className='grid grid-cols-3 my-6'>
+    <div className='grid lg:grid-cols-3 my-6'>
         {filterData?.map(data=><ToyCard key={data._id} data={data}></ToyCard>)}
       </div>
     </TabPanel>
     <TabPanel>
-    <div className='grid grid-cols-3 my-6'>
+    <div className='grid lg:grid-cols-3 my-6'>
         {filterData?.map(data=><ToyCard key={data._id} data={data}></ToyCard>)}
       </div>
     </TabPanel>

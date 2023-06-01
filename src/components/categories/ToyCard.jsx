@@ -5,7 +5,7 @@ const ToyCard = ({ data }) => {
     const { _id,img,name,price,rating} = data;
     return (
         <div>
-            <div className="card w-96 h-[450px] bg-base-100 shadow-xl">
+            <div className="card w-11/12 mx-auto h-[450px] bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
     <img src={img} alt="Shoes" className="rounded-xl" />
   </figure>

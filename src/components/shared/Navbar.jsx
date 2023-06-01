@@ -42,6 +42,9 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
+              
+              </li>
+              <li>
                 <Link to="./">Home</Link>
               </li>
               <li tabIndex={0}>
@@ -60,12 +63,38 @@ const Navbar = () => {
               <li>
                 <Link to="./blogs">Blogs</Link>
               </li>
-            </ul>
-          </div>
-          <Link className="btn btn-ghost normal-case text-xl">
-            <img className="w-48" src={logo} alt="" />
-          </Link>
+              <li>
+              <div className="">
+          {user ? (
+            <div className="flex items-center gap-4">
+              <div className="tooltip" data-tip={user.displayName}>
+                <img
+                  className="w-12 h-12 rounded-full"
+                  src={user.photoURL}
+                  alt=""
+                />
+              </div>
+              <button onClick={handleLogout} className="btn btn-secondary">
+                Logout
+              </button>
+            </div>
+          ) : (
+            <Link to="/login">
+              <button className="btn btn-secondary">Login</button>
+            </Link>
+          )}
         </div>
+              </li>
+            </ul>
+            
+          </div>
+        <Link className="btn btn-ghost normal-case text-xl ">
+            <img className="w-48" src={logo} alt="" />
+        </Link>
+        </div>
+        
+        
+        
         <div className="navbar-center hidden lg:flex  text-white">
           <ul className="menu menu-horizontal px-1">
             <li>
@@ -89,7 +118,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="hidden lg:flex navbar-end">
           {user ? (
             <div className="flex items-center gap-4">
               <div className="tooltip" data-tip={user.displayName}>
@@ -109,8 +138,9 @@ const Navbar = () => {
             </Link>
           )}
         </div>
+        </div>
       </div>
-    </div>
+    
   );
 };
 
